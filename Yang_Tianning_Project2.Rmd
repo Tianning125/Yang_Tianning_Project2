@@ -8,12 +8,27 @@ output: word_document
 ```{r setup, include=FALSE}
 # Hide code in the Word report
 knitr::opts_chunk$set(echo = FALSE)
+
+# Load packages used in the project
+library(tidyverse)
 ```
 
 GitHub repository: [Project repository](https://github.com/Tianning125/Yang_Tianning_Project2.git)
 
 # Data Processing
+```{r inspect-raw-data, include=FALSE}
+# Read the original 2018 data
+raw_2018 <- read_csv("data/AQ_2018.csv", show_col_types = FALSE)
 
+# Check column names and the first six rows
+names(raw_2018)
+head(raw_2018)
+
+# Count rows, distinct dates, and exact duplicate rows
+nrow(raw_2018)
+n_distinct(raw_2018$Date)
+sum(duplicated(raw_2018))
+```
 # Annual Summary Tables
 
 # Monthly CO and Ozone Concentrations
