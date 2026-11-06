@@ -275,6 +275,7 @@ ggplot(
     panel.grid.minor = element_blank()
   )
 ```
+
 The two pollutants have different concentration ranges, so I used two panels with separate y-axis scales to make their monthly patterns clearer. Both pollutants are shown in ppm.
 
 # Monthly PM2.5 Concentrations by Year
@@ -286,10 +287,9 @@ monthly_pm25 <- air_all %>%
     mean_pm25 = mean(pm25, na.rm = TRUE),
     .groups = "drop"
   )
-
 ```
 
-```{r plot-pm25, fig.width=6.5, fig.height=4.5, out.width="100%", dpi=300}
+```{r plot-pm25, fig.width=6.5, fig.height=4.0, out.width="100%", dpi=300}
 # Compare monthly mean PM2.5 concentrations across years
 ggplot(
   monthly_pm25,
@@ -322,7 +322,9 @@ ggplot(
     legend.position = "bottom",
     panel.grid.minor = element_blank()
   )
+
 ```
+
 I used lines and points to show changes in monthly mean PM2.5 concentrations and make comparisons between years easier.
 
 # Interpretation
