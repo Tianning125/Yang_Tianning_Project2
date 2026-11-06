@@ -1,0 +1,25 @@
+---
+title: "Air Quality in Durham County"
+author: "Tianning Yang"
+date: "2026-11-06"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+# Hide code in the Word report
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+GitHub repository: [Project repository](https://github.com/Tianning125/Yang_Tianning_Project2.git)
+
+# Data Processing
+
+# Annual Summary Tables
+
+# Monthly CO and Ozone Concentrations
+
+# Monthly PM2.5 Concentrations by Year
+
+# Interpretation
+
+# AI Use Statement
